@@ -23,10 +23,10 @@ export default function RoomInfoCard(props) {
                   </p>
                 ))}
                 <p className="d-flex align-items-center">
-                    <span className="mr-2">1.8</span>
-                    <BsFillPersonFill/>
-                    <span className="mx-2"></span>{" "}
-                    <span className="mx-2">5</span> <BsChatDotsFill/>
+                  <span className="mr-2">1.8</span>
+                  <BsFillPersonFill />
+                  <span className="mx-2"></span> <span className="mx-2">5</span>{" "}
+                  <BsChatDotsFill />
                 </p>
               </div>
             </div>

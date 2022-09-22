@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <div className={style.action_btn}>
         <button onClick={() => setSheetVisible(true)}>
-          <AiOutlinePlus className="mr-2" />
+          <AiOutlinePlus className="mr-2" />Start a room
         </button>
         <button>
           <BsGrid3X3Gap />

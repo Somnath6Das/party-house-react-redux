@@ -7,5 +7,31 @@ export default function NewRoom(props) {
     const [ micMuteVisible, setMicMuteVisible ] = useState(false);
     const card = props.cardDetails;
 
-    return <h2>Potatoes</h2>
+    return <>
+    <div className={style.roomDetailContainer}>
+        <div className={style.head}>
+            <div className={'d-flex align-items-center'}>
+                <a href="" onClick={() => {props.setSheetVisible(false)}}>
+                    <img src="/images/back.png" alt="" className={style.arrow_icon}/>
+                </a>
+                <span>Hallway</span>
+            </div>
+            <div>
+                <AiOutlineFile/>
+                <img src="/images/avt1.png" alt="" className={style.profile_img}/>
+            </div>
+        </div>
+        <div className={style.roomDetailCard}>
+            <div className="d-flex align-items-center justify-content-between flex-wrap"
+            style={{padding: "0.5em 1em" }}
+            >
+                {card.members.map((item) => (
+                    <div className={style.memberContainer}>
+                      {micMuteVisible ? <div></div>: " "}
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+    </>
 }

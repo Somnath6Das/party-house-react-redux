@@ -38,9 +38,18 @@
    padding: 1em 1em 3em 1em;
    border-radius: 1.5em 1.5em 0 0;
    height: 82.2vh;
+   overflow: auto;
+}
+
+.roomDetailCard p {
+    font-size: .8em;
+    color: var(--textColor);
+    font-weight: 500;
+    margin-bottom: 0.3em;
+    text-align: center;
 }
 
 .roomDetailCard img {
     width: 70px;
-    border-radius: 1.7em;
+   
 }

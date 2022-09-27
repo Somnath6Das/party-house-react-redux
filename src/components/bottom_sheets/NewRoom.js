@@ -35,7 +35,7 @@ export default function NewRoom(props) {
                             <img src="/images/avt3.png" alt="" />
                             <p>
                                 <span>*</span>
-                                {item.first_name} 
+                               {item.first_name}
                             </p>
                         </div>
                     ))}

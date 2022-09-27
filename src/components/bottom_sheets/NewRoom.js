@@ -5,7 +5,7 @@ import { BsMicMuteFill } from "react-icons/bs";
 
 export default function NewRoom(props) {
     const [ micMuteVisible, setMicMuteVisible ] = useState(false);
-    const card = props.cardDetails;
+    const card = props.cardDetail;
 
     return <>
     <div className={style.roomDetailContainer}>
@@ -18,20 +18,29 @@ export default function NewRoom(props) {
             </div>
             <div>
                 <AiOutlineFile/>
-                <img src="/images/avt1.png" alt="" className={style.profile_img}/>
+                <img src="/images/avt3.png" alt="" className={style.profile_img}/>
             </div>
         </div>
-        <div className={style.roomDetailCard}>
-            <div className="d-flex align-items-center justify-content-between flex-wrap"
-            style={{padding: "0.5em 1em" }}
+     <div className={style.roomDetailCard}>
+            <div className="d-flex align-item-center justify-content-between flex-wrap"
+            style={{ padding: "0.5em 1em"}}
             >
-                {card.members.map((item) => (
-                    <div className={style.memberContainer}>
-                      {micMuteVisible ? <div></div>: " "}
-                    </div>
-                ))}
+                    {card.members.map((item)=> (
+                        <div className={style.memberContainer}>
+                            {micMuteVisible ? (
+                                <div className={style.audio_icon}>
+                                    <BsMicMuteFill/>
+                                </div>
+                            ): ("")}
+                            <img src="/images/avt3.png" alt="" />
+                            <p>
+                                <span>*</span>
+                                {item.first_name} 
+                            </p>
+                        </div>
+                    ))}
             </div>
-        </div>
+     </div>
     </div>
     </>
 }

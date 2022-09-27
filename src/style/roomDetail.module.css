@@ -18,7 +18,7 @@
 }
 
 .head .profile_img {
-    width: 42px;
+    width: 28px;
     border-radius: 0.8em;
     margin-left: 1.2em;
 }
@@ -29,6 +29,18 @@
 }
 
 .head svg {
-    font-size: 1.6em;
+    font-size: 1.4em;
 
+}
+
+.roomDetailCard {
+   background-color: #ffffff;
+   padding: 1em 1em 3em 1em;
+   border-radius: 1.5em 1.5em 0 0;
+   height: 82.2vh;
+}
+
+.roomDetailCard img {
+    width: 70px;
+    border-radius: 1.7em;
 }

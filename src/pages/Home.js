@@ -57,7 +57,7 @@ export default function Home() {
         setTimeout(() =>{
           setSheetCreateRoom(item);
           setloaderVisibility(false);
-        }, 3000)
+        }, 1500)
       }}
       />
       <BottomSheet sheetTitle="new room"

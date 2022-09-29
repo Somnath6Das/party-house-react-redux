@@ -12,9 +12,11 @@
 }
 
 .head .arrow_icon {
-    width: 15px;
+    width: 26px;
     transform: rotate(-90deg);
     margin-top: -0.5em;
+    align-items: center;
+    justify-content: center;
 }
 
 .head .profile_img {

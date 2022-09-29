@@ -1,0 +1,28 @@
+{
+  "people": [
+    { "title": "April Underwood", "description": "CEO and Founder laboratory" },
+    {
+      "title": "Helena Price Hambecht",
+      "description": "Founder @drinkaus / Twitter @helena"
+    },
+    { "title": "Jemes Cham", "description": "@jamescham" },
+    { "title": "Tech", "description": "Venture capital, DTC, AI, SaaS" },
+    {
+      "title": "Durga Puja festival",
+      "description": "This is the season of durga puja"
+    }
+  ],
+  "conversation": [
+    { "title": "April Underwood", "description": "CEO and Founder laboratory" },
+    {
+      "title": "Helena Price Hambecht",
+      "description": "Founder @drinkaus / Twitter @helena"
+    },
+    { "title": "Jemes Cham", "description": "@jamescham" },
+    { "title": "Tech", "description": "Venture capital, DTC, AI, SaaS" },
+    {
+      "title": "Durga Puja festival",
+      "description": "This is the season of durga puja"
+    }
+  ]
+}

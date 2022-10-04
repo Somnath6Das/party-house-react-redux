@@ -8,6 +8,9 @@ export default function Explore() {
 
   return (
     <div className={style.exploreContainer}>
+      <div className={style.header}>
+        {/* <Subheader/> */}
+      </div>
       <h6>People to follow</h6>
       <div className={style.peopleContainer}>
         {people.map((item) => (
@@ -20,7 +23,7 @@ export default function Explore() {
               </div>
             </div>
             <button>Follow</button>
-            <h6>Find Conversations About ...</h6>
+            
           </div>
         ))}
         <button className={style.showMore}>
@@ -30,6 +33,21 @@ export default function Explore() {
           </span>
         </button>
       </div>
+      <h6>Find Conversations About ...</h6>
+            <div className="row mx-0">
+              {conversation.map((item) => (
+                <div className="col-6 px-2 mb-3">
+                  <div className={style.conversationCard}>
+                    <h6>
+                      <FireOutlined/>
+                     <span>{item.title}</span> 
+                     
+                    </h6>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
     </div>
   );
 }

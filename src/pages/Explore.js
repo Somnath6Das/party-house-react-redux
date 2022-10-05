@@ -2,6 +2,8 @@ import React from "react";
 import style from "../style/explore.module.css";
 import { DownOutlined, FireOutlined } from "@ant-design/icons";
 import data from "../data/Explore.json";
+import SubHeader from "../components/SubHeader";
+
 
 export default function Explore() {
   const { people, conversation } = data;
@@ -9,7 +11,21 @@ export default function Explore() {
   return (
     <div className={style.exploreContainer}>
       <div className={style.header}>
-        {/* <Subheader/> */}
+        <SubHeader/>
+        <form>
+        <img src="images/search.png"  width="20px" alt=""/>
+          <input style={{
+            backgroundColor: "#f4f4f4",
+            borderRadius: "0.8em",
+            padding:'0.3em 1em',
+            border: 'none',
+            boxShadow: 'none',
+          }}
+          size="large"
+          placeholder="Find People and Party"
+         
+          />
+        </form>
       </div>
       <h6>People to follow</h6>
       <div className={style.peopleContainer}>

@@ -11,7 +11,7 @@ export default function Explore() {
   return (
     <div className={style.exploreContainer}>
       <div className={style.header}>
-        <SubHeader/>
+        <SubHeader pageTitle='Explore'/>
         <form>
         <img src="images/search.png"  width="20px" alt=""/>
           <input style={{

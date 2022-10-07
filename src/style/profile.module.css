@@ -1,0 +1,33 @@
+.profileContainer {
+    height: 100%;
+    overflow: auto;
+    padding: 0 0.5em;
+    padding-top: 0em;
+    
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.actionBtn svg {
+    font-size: 1.5em;
+    margin-left: 1em;
+    color: rgb(21, 89, 216);
+
+}
+
+
+.profileContainer .profile_image {
+    width: 80px;
+    border-radius: 2.2em;
+}
+
+.actionBtn > svg:last-child {
+    margin-right: 20px;
+  
+}
